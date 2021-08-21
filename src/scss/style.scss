@@ -1,0 +1,13 @@
+// style.scss
+@charset "UTF-8";
+
+@use 'foundation/reset';
+@use 'foundation/base';
+
+@use 'object/project/top';
+@use 'object/utility/color';
+
+
+h1 {
+  font-size: 100px;
+}
