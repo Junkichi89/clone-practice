@@ -1,0 +1,15 @@
+@use "../global" as g;
+
+
+.l-main {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 2%;
+
+}
+
+@include g.mq(pc) {
+  body {
+    background: g.$main-color;
+  }
+}

@@ -8,6 +8,7 @@ const htmlMin = require('gulp-htmlmin');
 const sass = require('gulp-dart-sass');
 const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
+const bulkSass = require('gulp-sass-glob-use-forward');
 const postCss = require('gulp-postcss'); //for autoprefixer
 const autoprefixer = require('autoprefixer');
 const gcmq = require('gulp-group-css-media-queries');
@@ -67,6 +68,7 @@ const sassCompile = () => {
     src(paths.styles.src, {
       sourcemaps: true,
     })
+      .pipe(bulkSass())
       .pipe(
         plumber({
           errorHandler: notify.onError('Error: <%= error.message %>'),
