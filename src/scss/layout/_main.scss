@@ -13,3 +13,34 @@
     background: g.$white-color;
   }
 }
+
+h1{
+  color: red;
+  text-align: center;
+}
+
+.img-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+
+  .large-pic {
+    flex: 1;
+    height: auto;
+    margin-right: 10px;
+  }
+}
+
+.pic-list {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__item {
+    flex: 1 1 33%;
+  }
+
+}
+
+
+
