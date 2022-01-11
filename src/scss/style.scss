@@ -4,10 +4,7 @@
 @use 'foundation/reset';
 @use 'foundation/base';
 
-@use 'object/project/top';
-@use 'object/utility/color';
-
-
-h1 {
-  font-size: 100px;
-}
+@forward 'layout/**/*.scss';
+@forward 'project/**/*.scss';
+@forward 'component/**/*.scss';
+@forward 'utility/**/*.scss';
