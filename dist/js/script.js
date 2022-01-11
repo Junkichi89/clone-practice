@@ -1,0 +1,1 @@
+"use strict";$(function(){$(".hamburger").click(function(){$(this).toggleClass("active"),$(this).hasClass("active")?$(".nav-menu").addClass("active"):$(".nav-menu").removeClass("active")})});
